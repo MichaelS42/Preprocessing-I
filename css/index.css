@@ -1,139 +1,96 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+.textBlack {
+  color: rgba(0, 0, 0, 0.959);
+  font-size: 1.3rem;
 }
 body {
-  line-height: 1;
+  background: rgba(26, 83, 76, 0.582);
 }
-ol,
-ul {
-  list-style: none;
+header {
+  width: 100%;
 }
-blockquote,
-q {
-  quotes: none;
+header .nav_bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+header .nav_bar a {
+  text-decoration: none;
+  padding: 20px 20px;
+  color: purple;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.main {
+  background: rgba(241, 217, 211, 0.651);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
-/* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
 }
-html,
-body {
-  height: 100%;
+.intro .top-img {
+  width: 50%;
+  margin: 20px 20px 20px 20px;
 }
-.middle-content {
-  background-color: red;
+@media (max-width: 700px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro .top-img {
+    display: flex;
+  }
+}
+.four {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-left: 100px;
+}
+.four h1 {
+  font-size: 3em;
+}
+.four .b {
+  width: 50%;
+  margin-left: 110px;
+  font-size: 1.5em;
+  color: purple;
+  background-color: rgba(26, 83, 76, 0.582);
+}
+.four .p {
+  width: 10%;
+}
+.skills {
+  color: rgba(0, 0, 0, 0.959);
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.skills p {
+  width: 92%;
+}
+.work-hist {
+  margin: 20px 20px 20px 20px;
+  border: solid black;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+footer {
+  width: 100%;
+}
+.bottom {
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
 }
